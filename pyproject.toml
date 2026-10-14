@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pg-lock-witness"
+version = "0.1.0"
+description = "Explain captured pg_blocking_pids edges with cycle witnesses, upstream waiters, terminal observed blockers, missing rows and PID-zero prepared-transaction waiters."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Nripanka Das"}]
+dependencies = []
+
+[project.scripts]
+pg-lock-witness = "pg_lock_witness:main"
+
+[tool.setuptools]
+py-modules = ["pg_lock_witness"]

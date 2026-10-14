@@ -1,0 +1,28 @@
+{
+  "sessions": [
+    {
+      "pid": 101,
+      "blocking_pids": [
+        102
+      ]
+    },
+    {
+      "pid": 102,
+      "blocking_pids": [
+        101
+      ]
+    },
+    {
+      "pid": 103,
+      "blocking_pids": [
+        102
+      ]
+    },
+    {
+      "pid": 104,
+      "blocking_pids": [
+        0
+      ]
+    }
+  ]
+}
